@@ -1,0 +1,85 @@
+body{
+    background-color: brown;
+    background-size: cover;
+}
+
+.canvasContainer{
+    width: 50vw;
+}
+
+.singleRate{
+    display: flex;
+    justify-content: space-around;
+}
+
+#currencySelector{
+    height: 30px;
+}
+
+.singleRate table{
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.singleRate table th, .singleRate table td{
+    border : 1px solid black;
+}
+
+.curConv{
+    width: 50%;
+}
+
+.curConv td{
+    text-align: center;
+    width: 50%;
+}
+
+#convResult{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.curSelector{
+    font-family: monospace;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+@keyframes loading {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: -5px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.loaderIcon{
+    display: none;
+}
+
+.dot1{
+    position: relative;
+    animation: loading 500ms ease-in-out infinite;
+}
+
+.dot2{
+    position: relative;
+    animation: loading 500ms ease-in-out infinite;
+    animation-delay: 100ms;
+}
+
+.dot3{
+    position: relative;
+    animation: loading 500ms ease-in-out infinite;
+    animation-delay: 200ms;
+}
